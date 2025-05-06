@@ -1,0 +1,39 @@
+﻿@model FlightTrackerApp.Models.DepartureResultViewModel
+
+
+@{
+    ViewData["Title"] = "Odlety";
+}
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">Letiště @Model.Request.AirportIcao</h1>
+    <h4 class="text-center mb-4">Čas <br /> @Model.Request.From.ToString("HH:mm dd.MM.yyyy") - @Model.Request.To.ToString("HH:mm dd.MM.yyyy")</h4>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover table-dark">
+            <thead>
+                <tr>
+                    <th>Letadlo</th>
+                    <th>Let</th>
+                    <th>Odlet</th>
+                    <th>Přílet</th>
+                    <th>Z letiště</th>
+                    <th>Do letiště</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var flight in Model.Departures)
+                {
+                    <tr>
+                        <td>@flight.Icao24</td>
+                        <td>@flight.Callsign</td>
+                        <td>@flight.FirstSeenDateTime.ToLocalTime()</td>
+                        <td>@flight.LastSeenDateTime.ToLocalTime()</td>
+                        <td>@flight.EstDepartureAirport</td>
+                        <td>@flight.EstArrivalAirport</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

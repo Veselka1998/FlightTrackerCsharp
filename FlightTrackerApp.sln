@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightTrackerApp", "FlightTrackerApp\FlightTrackerApp.csproj", "{DC239604-2CFD-4143-AB76-F37F47A85CB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC239604-2CFD-4143-AB76-F37F47A85CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC239604-2CFD-4143-AB76-F37F47A85CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC239604-2CFD-4143-AB76-F37F47A85CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC239604-2CFD-4143-AB76-F37F47A85CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A14AA4A-4725-4644-A9E0-8A99D9E59E15}
+	EndGlobalSection
+EndGlobal

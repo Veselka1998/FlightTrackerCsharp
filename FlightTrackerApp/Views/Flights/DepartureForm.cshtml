@@ -1,0 +1,27 @@
+﻿@model DepartureRequestModel
+
+@{
+    ViewData["Title"] = "Vyhledat odlety";
+}
+
+<form asp-action="GetDepartures" method="post">
+    <h1 class="mb-4 text-center m-3">Vyhledat odlety</h1>
+
+    <div class="row mb-3 table table-dark">
+        <div class="col-md-4">
+            <label asp-for="AirportIcao" class="form-label">Letiště:</label>
+            <input asp-for="AirportIcao" class="form-control" />
+        </div>
+        <div class="col-md-4">
+            <label asp-for="From" class="form-label">Od:</label>
+            <input asp-for="From" type="datetime-local" class="form-control" />
+        </div>
+        <div class="col-md-4">
+            <label asp-for="To" class="form-label">Do:</label>
+            <input asp-for="To" type="datetime-local" class="form-control" />
+        </div>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary px-5">Zobrazit odlety</button>
+    </div>
+</form>
